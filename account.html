@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace - My Account</title>
+    <link rel="stylesheet" href="account.css">
+    <script>
+        function enableEditing(id) {
+            document.getElementById(id).removeAttribute('readonly');
+            document.getElementById(id).focus();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2><span class="logo">W</span>Workspace</h2>
+            <ul>
+                <li><a href="index.html"><span class="icon">🏠</span>Home</a></li>
+                <li><a href="customers.html"><span class="icon">👤</span>Customers</a></li>
+                <li><a href="departments.html"><span class="icon">🏢</span>Departments</a></li>
+                <li><a href="media.html"><span class="icon">🎥</span>Media</a></li>
+            </ul>
+            <div class="account active">
+                <a href="account.html"><span class="icon">👤</span>My Account</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" placeholder="Search in My Accounts">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+            <div class="profile-section">
+                <div class="profile-picture">
+                    <img src="flat-business-man-user-profile-avatar-icon-vector-4333097.jpg"
+                     alt="Profile Picture">
+                    
+                    <div class="edit-icon" onclick="enableEditing('profile-picture')">✏️</div>
+                </div>
+                <div class="profile-info">
+                    <div class="editable-field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" value="John Doe" readonly>
+                        <div class="edit-icon" onclick="enableEditing('name')">✏️</div>
+                    </div>
+                    <div class="editable-field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" value="example@gmail.com" readonly>
+                        <div class="edit-icon" onclick="enableEditing('email')">✏️</div>
+                    </div>
+                    <div class="editable-field">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" value="9134837948" readonly>
+                        <div class="edit-icon" onclick="enableEditing('phone')">✏️</div>
+                    </div>
+                    <div class="editable-field">
+                        <label for="dob">Date Of Birth:</label>
+                        <input type="text" id="dob" value="July 16, 1999" readonly>
+                        <div class="edit-icon" onclick="enableEditing('dob')">✏️</div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="save-btn">SAVE</button>
+                    <button class="cancel-btn">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

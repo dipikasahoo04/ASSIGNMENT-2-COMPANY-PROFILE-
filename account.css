@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f2f2f9;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #d4c1e1;
+    color: #4b3a60;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.logo {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e8d7f1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li:hover, .sidebar ul li.active {
+    background-color: #a785c7;
+    color: white;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.account {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #e8d7f1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.account a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account a:hover {
+    background-color: #a785c7;
+    color: white;
+}
+
+.account.active {
+    background-color: #a785c7;
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.search-icon {
+    color: #4b3a60;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    position: relative;
+    max-width: 150px;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-picture .edit-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #f7efef;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.profile-info {
+    width: 50%;
+}
+
+.editable-field {
+    display: flex;
+    align-items: center;
+    background-color: #e8d7f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.editable-field label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.editable-field input {
+    flex: 2;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+}
+
+.editable-field .edit-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.save-btn, .cancel-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
